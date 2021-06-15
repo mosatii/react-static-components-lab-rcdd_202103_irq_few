@@ -41,7 +41,7 @@ Ripple.prototype = {
       ${Math.floor(rippleSettings.strokeColor[2])},
       ${this.opacity})`;
   },
-  
+
   draw: function draw() {
     this.ctx.beginPath();
     this.ctx.strokeStyle = this.strokeColor;
@@ -49,7 +49,7 @@ Ripple.prototype = {
       2 * Math.PI);
     this.ctx.stroke();
   },
-  
+
   setStatus: function setStatus(status) {
     this.status = status;
   },
